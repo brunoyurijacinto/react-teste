@@ -36,8 +36,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,md,json}": [
-      "npx prettier --write",
-      "git add"
+      "npx prettier --write"
     ],
     "*.{js,jsx}": "npm run lint"
   }
