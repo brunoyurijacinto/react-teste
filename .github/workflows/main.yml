@@ -31,4 +31,4 @@ jobs:
         files: dist/**
         body: Release test        
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
