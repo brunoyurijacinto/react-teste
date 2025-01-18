@@ -24,11 +24,13 @@ jobs:
     - name: Build project
       run: npm run build
 
-    - name: Create GitHub Release
+    - name: Zip folder
+      run: zip -r release.zip dist
+
+    - name: Create Release
       id: create_release
       uses: softprops/action-gh-release@v1
       with:
-        files: dist/**
-        body: Release test        
+        files: myrelease.zip
       env:
-        GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}    
