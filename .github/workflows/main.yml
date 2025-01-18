@@ -29,7 +29,6 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         files: dist/**
-        body: Release test
-        make_latest: true
+        body: Release test        
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
