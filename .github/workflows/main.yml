@@ -3,7 +3,7 @@ name: Build and Release
 on:
   push:
     tags:
-      - '*'
+      - 'v*'
 
 jobs:
   build:
@@ -28,7 +28,7 @@ jobs:
       id: create_release
       uses: softprops/action-gh-release@v1
       with:
-        files: dist
+        files: dist/**
         body: Release test
         make_latest: true
       env:
