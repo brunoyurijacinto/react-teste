@@ -1,0 +1,20 @@
+
+curl -H "Accept: application/vnd.github+json" -H "Authorization: Bearer TOKEN" https://api.github.com/repos/brunoyurijacinto/react-teste/releases
+wget --header="Authorization: token TOKEN" --header="Accept: application/octet-stream" --output-document=release.zip "https://api.github.com/repos/brunoyurijacinto/react-teste/releases/assets/221323217"
+
+Outros Exemplos
+
+curl -L -o asset_name -H "Authorization: Bearer TOKEN" https://api.github.com/repos/brunoyurijacinto/react-teste/releases     
+
+wget --header="Accept: application/octet-stream" --content-disposition -O teste https://github.com/brunoyurijacinto/react-teste/releases/download/v1.0.5/release.zip
+    
+
+wget --content-disposition --header="Accept: application/octet-stream" https://github.com/brunoyurijacinto/react-teste/releases/download/v1.0.5/release.zip
+
+
+wget --header="Authorization: Bearer TOKEN" --content-disposition -O asset_name.zip https://api.github.com/repos/brunoyurijacinto/react-teste/releases/assets/221323217
+
+wget -q --auth-no-challenge --header='Accept:application/octet-stream' https://TOKEN@github.com/brunoyurijacinto/react-teste/releases/download/v1.0.5/release.zip
+
+
+wget --header="Authorization: token TOKEN" --header="Accept: application/octet-stream" --output-document=release.zip "https://api.github.com/repos/brunoyurijacinto/react-teste/releases/assets/221323217"
