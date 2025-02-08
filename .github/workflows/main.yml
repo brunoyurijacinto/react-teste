@@ -62,6 +62,6 @@ jobs:
       with:
         path: my-artifact
         pattern: my-artifact-*
-        merge-multiple: true
+        merge-multiple: false
     - run: ls -R my-artifact
 
